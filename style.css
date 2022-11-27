@@ -1,0 +1,185 @@
+@font-face {
+  font-family: "Fjalla One";
+  src: url("/resources/fonts/FjallaOne-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  src: url("/resources/fonts/FjallaOne-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  src: url("/resources/fonts/NotoSans-Regular.ttf");
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+/* styling for the entire webpage */
+body {
+  margin: 0;
+  padding: 10px;
+  font-size: 15px;
+  line-height: 1.4em;
+  background-color: aqua;
+  color: rgb(0, 0, 0);
+font-family: "Noto Sans", sans-serif;	
+}
+
+/* header at the top with the blog name and logo */
+header {
+  max-width: 100%;
+  background-color: darkcyan;
+  padding: 20px;    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.breadcrumb li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+}
+
+/* heading element for the blog name */
+h1 {
+  color: #ffffff;
+  font-size: 50px;
+  line-height: 1;
+font-family: 'Montserrat', sans-serif;
+}
+
+/* logo image in the header */
+header img {
+  max-height: 70px;
+  width: auto;
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+/* heading element for the title of each separate blog post */
+h2 {
+  font-size: 36px;
+  margin-top: 5px;
+  line-height: 120%;
+font-family: "Fjalla One", sans-serif;  
+}
+
+/* heading element for the date of each blog post */
+h3 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #9C9C9C;
+  margin-top: -10px;
+  text-decoration: underline;
+  text-decoration-color: #9C9C9C;
+  text-decoration-color: #c4d4af;
+  color: #c4d4af;
+}
+
+/* images in the blog posts */
+.post-post img {
+  height:400px ;
+  border-radius: 5px;
+  display: block;
+  margin: auto;
+  width: 600px;
+}
+#view-img{
+  margin-left: 150px;
+}
+#dog-img{
+  margin-left: 400px;
+}
+
+/* heading element for the image captions */
+h4 {
+text-align: center;
+color: #001e1d;
+font-size: 12px;
+width: auto;
+margin: 5px 0 0 0;
+padding: 0;
+}
+
+/* paragraph elements used to write the main blog post text */
+p {
+  font-size: 16px;
+  border-left: 5px solid #f17d80;
+  padding-left: 15px;
+  margin-top: 30px;
+}
+
+/* the "back to top" links */
+a {
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+margin-top: 30px;
+text-align: center;
+color: #20938b;
+text-transform: uppercase;
+}
+
+/* styling for the "back to top" link when hovered */
+a:hover {
+  color: aliceblue;
+}
+
+/* <div> element that contains all the blog entries */
+div.container {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* <div> element inside parent <div class="container"> element */
+div.column {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%;
+  width: 100%;
+}
+
+/* formatting to keep the margins of the sections equal */
+.column:first-child {
+  margin-left: 0;
+}
+
+/* <div> element to create the container for each separate blog post */
+div.blog-post {
+  background-color: bisque;
+  margin: 0 auto 2em auto;
+  padding: 35px 30px;
+  box-shadow: 5px 5px 15px -1px rgba(0, 0, 0, 0.3);
+}
+
+/* MEDIA QUERIES */
+
+/* 900px screens*/
+@media only screen and (max-width: 56.25em) {
+  .column {
+      margin: 1% 0 1% 0%;
+  }
+}
+
+/* 685px screens */
+@media only screen and (max-width: 42.813em) {
+  h2 {
+      font-size: 1.95em;
+  }
+  h3 {
+      font-size: .9em;
+  }
+}
+
+/* 380px screens */
+@media only screen and (max-width: 23.75em) {
+  p {
+      font-size: .9em;
+  }
+}

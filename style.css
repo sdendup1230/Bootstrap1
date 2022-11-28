@@ -27,6 +27,9 @@ body {
   color: rgb(0, 0, 0);
 font-family: "Noto Sans", sans-serif;	
 }
+.gly-con{
+  margin-left: 350px;
+}
 
 /* header at the top with the blog name and logo */
 header {
